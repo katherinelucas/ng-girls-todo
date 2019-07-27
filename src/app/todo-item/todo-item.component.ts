@@ -28,7 +28,6 @@ export class TodoItemComponent implements OnInit {
   @Output() remove: EventEmitter<TodoItem> = new EventEmitter();
   @Output() update: EventEmitter<any> = new EventEmitter();
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
   completeItem() {
     this.update.emit({

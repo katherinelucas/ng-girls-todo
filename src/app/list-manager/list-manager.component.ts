@@ -11,7 +11,7 @@ import { TodoListService } from '../services/todo-list.service';
     <ul>
       <li *ngFor="let todoItem of todoList">
       <app-todo-item [item]="todoItem"
-      (remove)="removeItem($event)">
+      (remove)="removeItem($event)"
       (update)="updateItem($event.item, $event.changes)"></app-todo-item>
       </li>
     </ul>
